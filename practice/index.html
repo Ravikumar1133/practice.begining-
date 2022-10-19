@@ -1,41 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>simple page</title>
     <style>
-        p{
-            font-size:25px;
-            display:flex;
-            flex-direction: column;
-            flex-direction: space-between;
-            border-bottom: 2px solid black;
-            border-radius: 5px;
-            background-color:lightgrey;
-            text-align: center;
-            align-items: center;
-            margin:5px 20%;
-             padding:0 20px;
-
-        }
-        body{
-            background: rgb(2,0,36);
-            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,94,121,1) 21%, rgba(0,212,255,1) 100%);
-            margin:0 5px;
-            padding:10px;
-            align-items: center;
-            text-align:center;
-
-        }
+      p {
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        flex-direction: space-between;
+        border-bottom: 2px solid black;
+        border-radius: 5px;
+        background-color: lightgrey;
+        text-align: center;
+        align-items: center;
+        margin: 5px 20%;
+        padding: 5px 20px;
+        text-indent: 50px;
+        flex: wrap;
+      }
+      body {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(9, 94, 121, 1) 21%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        margin: 5px;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        border: 2px solid rgb(234, 228, 228);
+        border-radius: 20px;
+      }
+      img {
+        border-radius: 10px;
+        /* float used to shift image left ,r,t,b */
+        float: auto;
+        object-fit: cover;
+      }
+      .reviews {
+        display: block;
+        border-bottom: 2px solid black;
+        border-radius: 5px;
+        background-color: lightgrey;
+        text-align: center;
+        align-items: center;
+        margin: 0 600px;
+        padding: 10px 20px;
+        font-style: italic;
+        font-size: 25px;
+        font-weight: bold;
+      }
     </style>
-</head>
-<body>
-    <img src="images/DSC_0982.JPG"  width="600px" height="600px">
- <hr>
-    <p><i><b>this is silver falls</b></i></p>
-    <p>located in kodaikanal </p>
+  </head>
+  <body>
+    <img src="images/DSC_0982.JPG" width="600px" height="600px" />
+    <hr />
+    <p>
+      <b>this is silver falls</b>
+      <a href="#reviews">see reviews </a>
+    </p>
+    <p>located in kodaikanal</p>
     <p>in state of tamil nadu</p>
-    <p>india </p>
-<hr>
-    
-</body>
+    <p>india</p>
+    <hr />
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <h1 class="reviews">reviews</h1>
+    <h2>ram kumar</h2>
+    <p>
+      This falls lies on Dindigul-Kodai route just 7kms away from Kodaikanal
+      town.This falls is formed from excess water of Kodai lake and you can have
+      a nice view of the falls.Now they closed the falls noone can take bath
+      under the falls.There will be very big crowd as it lies on the main road
+      and need to for a few minutes to take nice photographs.
+    </p>
+    <hr />
+    <h2>rajesh</h2>
+    <p>
+      On our journey from Kerala to Kodaikanal we have seen this silver cascade
+      waterfall. Beautiful waterfall surrounding scenery are awesome
+    </p>
+    <hr />
+    <h2>vicky</h2>
+    <p>
+      The perfect stop-over in between a long journey from Madurai to
+      Kodaikanal, the silver cascade falls demand your attention while you
+      travel. These Falls are formed as a result of the over flowing of water
+      from man-made Kodai Lake & are the perfect spot to have a break during a
+      long road trip. As tunning sight of water thrashing down from 180 feet
+      right into the ground below and mesmerizing one and all with its sheer
+      strength and beauty . One can also take a bath in the water showers of the
+      falls provided the temperature is right As falls site is slightly off from
+      main road, one can easily relax , take photographs etc. & also enjoy some
+      cool drinks available at site during tourist season. One can also enjoy
+      the exquisite mouth watering local fruits which are available with fruit
+      sellers. Unmatched experience & don’t feel like leaving the place.
+    </p>
+    <h3>
+      <a
+        href="https://www.google.com/maps/place/Silver+Cascade+Falls/@10.2418012,77.5087075,17z/data=!3m1!4b1!4m5!3m4!1s0x3b0766f8acd7ee7f:0x9ddaad7c9518d093!8m2!3d10.2418012!4d77.5108962 "
+        target="_blank"
+        >click here for location on google maps</a
+      >
+    </h3>
+    <footer>
+      <a href="#">view top</a>
+    </footer>
+  </body>
 </html>
