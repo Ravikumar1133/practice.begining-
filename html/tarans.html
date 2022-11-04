@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      .box {
+        background-color: gold;
+        width: max-content;
+        padding: 5px;
+        width: 200px;
+        /* height: 200px; */
+        transition: transform 0.5s, background-color 0.8s;
+      }
+      .container {
+        perspective: 200px;
+      }
+      .container:hover .box {
+        transform: rotatey(30deg);
+        transform-origin: 0 50%;
+        background-color: dodgerblue;
+      }
+      .container:hover .box-baba {
+        transform: rotatex(30deg);
+        transform-origin: 0 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          nihil fugiat incidunt ea rerum odio quaerat aliquid totam eos facilis?
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          nihil fugiat incidunt ea rerum odio quaerat aliquid totam eos facilis?
+        </p>
+      </div>
+      <div class="box box-baba">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          nihil fugiat incidunt ea rerum odio quaerat aliquid totam eos facilis?
+        </p>
+      </div>
+    </div>
+    <div class="prac">
+      <p>forms below link down</p>
+      <a href="/practice/html/advance.form.mili.html" target="_blank">forms</a>
+      <p>click below to see the animation</p>
+      <a href="/practice/html/animation.html" target="_blank">animation</a>
+      <p>grid gallary</p>
+      <a href="/practice/html/excercise.3.html" target="_blank">grid galary</a>
+      <p></p>
+    </div>
+  </body>
+</html>

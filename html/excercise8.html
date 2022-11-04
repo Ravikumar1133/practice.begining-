@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>excercise8</title>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        flex: wrap;
+        height: fit-content;
+        width: 500px;
+        border-radius: 30px;
+        overflow: hidden;
+        margin: 60px;
+        background: #f9f9f9;
+        box-shadow: -5px -10px 30px#bfbcbc;
+        transform: rotate(-15deg);
+        transition: box-shadow 0.8s, transform 1s;
+      }
+      .card:hover {
+        transform: rotate(0deg);
+        box-shadow: none;
+      }
+      .card img:hover {
+        overflow: none;
+        transform: scale(1.15);
+      }
+
+      .foot > img {
+        width: 60px;
+        height: 60px;
+        border: solid hwb(0 100% 0%);
+        border-radius: 30px;
+        object-fit: fill;
+      }
+      .main {
+        padding: 10px 5px;
+      }
+      .foot {
+        background: rgb(116, 214, 144);
+        background: linear-gradient(
+          90deg,
+          rgba(116, 214, 144, 1) 43%,
+          rgba(32, 160, 155, 0.944405179063813) 90%
+        );
+        padding: 5px;
+      }
+      span.user_name {
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        position: relative;
+        bottom: 25px;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+      .note {
+        text-align: center;
+        color: blue;
+        font-size: 25px;
+      }
+      @media screen and (min-width: 700px) and (max-width: 900px) {
+        .card {
+          display: flex;
+          flex-direction: column;
+          width: 400px;
+          height: auto;
+        }
+      }
+      @media screen and (max-width: 699px) {
+        .card {
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="main">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In nesciunt
+          voluptatem ab totam, obcaecati facilis animi similique eum eos et!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus hic
+          obcaecati voluptates facere corrupti excepturi odit molestiae,
+          repellat quidem? Voluptas!
+        </p>
+      </div>
+      <div class="foot">
+        <img
+          src="https://randomuser.me/api/portraits/men/54.jpg"
+          alt="user image"
+        />
+        <span class="user_name">Dwyane johnson</span>
+      </div>
+    </div>
+    <div class="note">
+      <p>hover to see the changes on above card</p>
+    </div>
+  </body>
+</html>

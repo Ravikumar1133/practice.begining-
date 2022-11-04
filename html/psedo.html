@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>csspseudo</title>
+    <link rel="stylesheet" href="/normalizer/normalize.css" />
+    <style>
+      /*first of type   */
+      article p:first-of-type {
+        color: rgba(184, 40, 12, 0.99);
+        font-size: 25px;
+        font-style: italic;
+      }
+      article:last-of-type {
+        font-size: bolder;
+        font-style: oblique;
+      }
+      body {
+        background: rgb(0, 1, 36);
+        background: linear-gradient(
+          45deg,
+          rgba(192, 193, 227, 0.544) 32%,
+          rgb(210, 226, 230) 100%
+        );
+        margin: 10px;
+      }
+      section:first-child {
+        color: blue;
+      }
+      ul li:nth-child(odd) {
+        color: rgb(73, 25, 170);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      li:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      ul {
+        font-size: 30px;
+      }
+      h:hover {
+        text-decoration: underline;
+        font-size: 20px;
+      }
+      /* here below used pseudo element instead class , here targeting a single word on context  */
+      p::first-letter {
+        font-size: 28px;
+        font-weight: bold;
+      }
+      h::after {
+        content: "👇";
+      }
+      h {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <h>heading one </h>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus</p>
+
+        <p>
+          tenetur odit deserunt facere? Optio at nesciunt iure quis nam velit!
+        </p>
+        <h>heading 2 </h>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          reiciendis facere. Maiores modi ipsa illo?
+        </p>
+      </article>
+
+      <article>
+        <h>heading one </h>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus</p>
+
+        <p>
+          tenetur odit deserunt facere? Optio at nesciunt iure quis nam velit!
+        </p>
+        <h>heading 2 </h>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          reiciendis facere. Maiores modi ipsa illo?
+        </p>
+      </article>
+    </section>
+    <br />
+    <ul>
+      <li>iteam1</li>
+      <li>iteam2</li>
+      <li>iteam3</li>
+      <li>iteam4</li>
+      <li>iteam5</li>
+    </ul>
+    <a href="psedo.html">click above </a>
+  </body>
+</html>

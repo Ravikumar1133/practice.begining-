@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <span class="pln"></span>
+    <title>Document</title>
+    <style>
+      form {
+        width: 50%;
+      }
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="form">
+        <label for="name">Name</label>
+        <input
+          placeholder="name"
+          id="name"
+          type="text"
+          required
+          minlength="4"
+        />
+      </div>
+      <div class="form">
+        <label for="email">Email</label>
+        <input placeholder="email" id="email" type="email" required />
+      </div>
+      <div>
+        <label for="country">Country</label>
+        <input
+          placeholder="country from"
+          list="country"
+          type="textarea"
+          autocomplete="off"
+        />
+        <datalist id="country">
+          <option data-value="1">india</option>
+          <option data-value="2">china</option>
+          <option data-value="3">japan</option>
+          <option data-value="4">singapore</option>
+        </datalist>
+      </div>
+      <div>
+        <label for="">Select Course</label>
+        <select>
+          <optgroup label="front-end-courses">
+            <option value=""></option>
+            <option value="1">html</option>
+            <option value="2">css</option>
+            <option value="3">javascript</option>
+          </optgroup>
+          <optgroup label="back-end-courses">
+            <option>nodejs</option>
+            <option>mongodb</option>
+            <option>oracle</option>
+            <option>aws</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        Courses:
+        <label class="label-inline" for="front-end">front-end</label>
+        <input type="checkbox" id="front-end" />
+        <label class="label-inline" for="back-end">back-end</label>
+        <input type="checkbox" id="back-end" />
+      </div>
+      <div>
+        Membership:
+        <input type="radio" name="memberdhip" id="silver" />
+        <label class="label-inline" for="silver">silver</label>
+
+        <input type="radio" name="memberdhip" id="gold" />
+        <label class="label-inline" for="gold">gold</label>
+      </div>
+      <div>
+        <textarea cols="30 " row="10"> comment..</textarea>
+      </div>
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise Form</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        height: 100vh;
+        width: 100%;
+        line-height: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        /* border: 1px solid black; */
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      input[type="email"],
+      [type="password"] {
+        border: 2px solid #ced4da;
+        outline: 0;
+        width: 100%;
+        padding: 10px 2px;
+        margin: 2px 0;
+        border-radius: 5px;
+      }
+      button {
+        width: 100%;
+        border-radius: 25px;
+        padding: 10px 0;
+        background: #86b7fe;
+        border: 0;
+        transition: scale 0.5s;
+      }
+      button:hover {
+        transform: scale(1.1);
+      }
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+        border: 2px solid#86b7fe;
+        box-shadow: 0 0 0 4px #b9d3fa;
+        transition: border 0.15s, box-shadow 0.15s;
+      }
+      span.sign_in_note {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        padding: 20px;
+        display: inline-block;
+      }
+      span.cp__rights {
+        color: #999;
+      }
+
+      form.main_form {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form class="main_form">
+        <span class="sign_in_note">please sign in</span>
+        <div class="form">
+          <input
+            type="email"
+            id="email"
+            autofocus
+            required
+            placeholder="Email"
+          />
+        </div>
+        <div class="form">
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="Password"
+            minlength="8"
+            maxlength="12"
+          />
+        </div>
+        <div>
+          <input id="checkbox_form" type="checkbox" />
+          <label for="">remember me </label>
+        </div>
+        <div>
+          <button type="submit">sign in</button>
+        </div>
+        <span class="cp__rights">copyrights©2020</span>
+      </form>
+    </div>
+  </body>
+</html>

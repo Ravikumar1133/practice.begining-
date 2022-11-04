@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>basic form</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        text-transform: uppercase;
+        line-height: 1.5em;
+      }
+      label {
+        display: block;
+      }
+
+      button {
+        background: lightgray;
+        color: dodgerblue;
+        border: 0;
+        border-radius: 5px;
+        transition: color 0.15s;
+        padding: 0.5em 0.25rem;
+      }
+      button:hover {
+        background: dodgerblue;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+        transition: color 0.15s;
+      }
+      input[type="text"],
+      [type="email"] {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 0.5rem 0.25rem;
+        transition: border-color 0.15s, box-shadow 0.15s;
+      }
+      input[type="text"]:focus,
+      input[type="email"]:focus {
+        border-color: dodgerblue;
+        outline: 0; /* here it is given to zero value of browsers default colour */
+        box-shadow: 0 0 0 4px rgba(24, 117, 255, 0.25);
+      }
+      .form {
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="form">
+        <label for="name">name</label>
+        <input id="name" type="text" />
+      </div>
+      <div class="form">
+        <label for="email">email</label>
+        <input id="email" type="email" />
+      </div>
+      <button type="submit">submit</button>
+      <button type="reset">clear</button>
+    </form>
+  </body>
+</html>
